@@ -21,7 +21,7 @@ jobs:
         steps: 
             -   name: print step name 
                 run: |
-                echo "this is test step"
+                    echo "this is test step"
     deploy:
         steps:
             -   name: print step name 
