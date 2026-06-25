@@ -18,11 +18,13 @@ jobs:
               run: echo "this is build step"
 
     test:
+        runs-on: ubuntu-latest
         steps: 
             -   name: print step name 
                 run: |
                     echo "this is test step"
     deploy:
+        runs-on: ubuntu-latest
         steps:
             -   name: print step name 
                 run: echo " this is deploy step"
