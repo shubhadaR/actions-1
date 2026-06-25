@@ -1,0 +1,25 @@
+name: my workflow
+
+on:
+    push:
+        branches: [master]
+
+    pull_request:
+        branches: [master]
+
+    workflow_dispatch: 
+
+jobs:
+    build:
+        runs_on: ubnuntu-latest
+        steps:
+            uses: actions/checkout@v4
+            run: echo "this is build step"
+
+    test:
+        steps: 
+            run: |
+                echo "this is test step"
+    deploy:
+        steps:
+            run: echo " this is deploy step"
