@@ -11,7 +11,7 @@ on:
 
 jobs:
     build:
-        runs_on: ubnuntu-latest
+        runs-on: ubnuntu-latest
         steps:
             uses: actions/checkout@v4
             run: echo "this is build step"
